@@ -10,7 +10,10 @@ let image2 = `images/dice${randomNumber2}.png`;
 document.querySelector(".img1").setAttribute("src", image1);
 document.querySelector(".img2").setAttribute("src", image2);
 
+(randomNumber1 > randomNumber2) ? document.querySelector("h1").innerHTML = "Player 1 Wins!" : document.querySelector("h1").innerHTML = "Player 2 Wins!";
 
+
+//This was how I was originally going to match the images with the number lol. Talk about WET code
 // if(randomNumber1 === 1) {
 //     document.querySelector(".img1").setAttribute("src", "images/dice1.png");
 // } else if(randomNumber1 === 2) {
@@ -23,4 +26,3 @@ document.querySelector(".img2").setAttribute("src", image2);
 //     document.querySelector(".img1").setAttribute("src", "images/dice5.png");
 // }else {
 //     document.querySelector(".img1").setAttribute("src", "images/dice6.png");
-console.log(image1);
